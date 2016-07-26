@@ -16,7 +16,7 @@
     <Grid>
         <TabControl>
             <TabItem Header="Settings">
-                <localControls:SettingsControl />
+                <localControls:SettingsControl x:Name="settingsTab" />
             </TabItem>
             <TabItem Header="Status">
                 <localControls:StatusControl/>
