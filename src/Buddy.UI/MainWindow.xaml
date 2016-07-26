@@ -21,6 +21,9 @@
             <TabItem Header="Status">
                 <localControls:StatusControl/>
             </TabItem>
+            <TabItem Header="Map">
+                <localControls:MapControl/>
+            </TabItem>
         </TabControl>
     </Grid>
 </controls:MetroWindow>
