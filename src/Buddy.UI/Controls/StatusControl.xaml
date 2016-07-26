@@ -18,28 +18,28 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="0">
             <Label x:Name="lblProvider" Content="Provider"/>
-            <ListBox x:Name="lbProvider" Width="120">
+            <ListBox x:Name="lbProvider" Width="auto">
                 <ListBoxItem Name="lbiGoogle" Content="google"/>
                 <ListBoxItem Name="lbiPTC" Content="ptc"/>
             </ListBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <Label x:Name="lblUsername" Content="Username"/>
-            <TextBox x:Name="tbUsername" TextWrapping="Wrap" Text="uername@domain.com" Width="120"/>
+            <TextBox x:Name="tbUsername" TextWrapping="Wrap" Text="uername@domain.com" Height="43" Margin="0,0,0,-0.333" VerticalAlignment="Top"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="2">
             <Label x:Name="lblPassword" Content="Password"/>
-            <TextBox x:Name="tbPassword" TextWrapping="Wrap" Text="Password" Width="120"/>
+            <PasswordBox x:Name="tbPassword" Width="120"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="3">
             <Label x:Name="lblLocation" Content="Location"/>
-            <TextBox x:Name="tbLocation" TextWrapping="Wrap" Text="Central Park, New York" Width="120"/>
+            <TextBox x:Name="tbLocation" TextWrapping="Wrap" Text="Central Park, New York" Width="auto"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="4">
             <Button Width="80" Click="Button_Click" Content="Start"/>
             <Button Width="80" Click="StopButton_Click" Content="Stop"/>
         </StackPanel>
 
-        <RichTextBox Grid.Row="5"></RichTextBox>
+        <RichTextBox x:Name="logBox" Grid.Row="5"></RichTextBox>
     </Grid>
 </UserControl>
